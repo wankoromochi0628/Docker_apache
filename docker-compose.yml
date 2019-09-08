@@ -1,0 +1,7 @@
+hoge-apache:
+    build: ./apache
+    ports:
+        - "8080:80"
+    container_name: apache
+    volumes:
+        - ./html:/usr/local/apache2/htdocs/
